@@ -39,24 +39,22 @@ function compile() {
 }
 
 describe('webpack', () => {
-  let vars = {};
-  beforeAll(async () => {
-    try {
-      await cleanDistDirectory();
-      await compile();
-    } catch (error) {
-      throw error;
-    }
-    await delay(200);
-    // eslint-disable-next-line global-require, import/no-unresolved
-    vars = require('./dist/variables');
+  beforeAll(() => {
+    return cleanDistDirectory().then(() => {
+      return compile();
+    });
   });
 
   test('element variables should be a none-empty object', () => {
+    // eslint-disable-next-line global-require, import/no-unresolved
+    const vars = require('./dist/variables');
     expect(typeof vars.element).toBe('object');
     expect(Object.keys(vars.element).length).toBeGreaterThan(20);
   });
+
   test('bulma variables should match snapshot', () => {
+    // eslint-disable-next-line global-require, import/no-unresolved
+    const vars = require('./dist/variables');
     expect(typeof vars.bulma).toBe('object');
     expect(Object.keys(vars.bulma).length).toBeGreaterThan(20);
     expect(vars.bulma).toMatchSnapshot();
