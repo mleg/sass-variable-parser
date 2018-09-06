@@ -65,7 +65,8 @@
     "loader-utils": "^1.1.0",
     "lodash": "^4.17.10",
     "node-sass": "^4.9.3",
-    "strip-json-comments": "^2.0.1"
+    "strip-json-comments": "^2.0.1",
+    "webpack": "^4.17.0"
   },
   "devDependencies": {
     "@types/css": "0.0.31",
@@ -91,8 +92,7 @@
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
     "typedoc": "^0.12.0",
-    "typescript": "^3.0.1",
-    "webpack": "^4.17.0"
+    "typescript": "^3.0.1"
   },
   "ava": {
     "failFast": true,
