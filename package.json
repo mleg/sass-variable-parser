@@ -60,6 +60,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
+    "@types/webpack": "^4.4.10",
     "css": "^2.2.3",
     "handlebars": "^4.0.11",
     "loader-utils": "^1.1.0",
@@ -75,7 +76,6 @@
     "@types/node-sass": "^3.10.32",
     "@types/rimraf": "^2.0.2",
     "@types/strip-json-comments": "0.0.30",
-    "@types/webpack": "^4.4.10",
     "ava": "1.0.0-beta.7",
     "bulma": "0.6.2",
     "codecov": "^3.0.2",
