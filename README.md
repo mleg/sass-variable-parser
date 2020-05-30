@@ -1,3 +1,7 @@
+# UNMAINTAINED
+
+I personally don't use it anymore and recommend **CSS modules** as a tool for importing SASS / LESS variables to Javascript: [__Example__](https://github.com/mleg/sass-vars-to-js-example)
+
 # Sass variable parser and loader for webpack
 
 > Works as a **Webpack loader** or can be used as **parser** in Node.js
